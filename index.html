@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Virtual Agronomist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Fertilizantes',     80],
+          ['Insecticidas',      65],
+          ['Fungicidas', 45],
+          ['Fitorreguladores',    20],
+          ['Otros',    10]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+	<header class="Nav">
+		<div class="Nav__titulo">
+			<h1 class="titu">Virtual Agronomist</h1>
+		</div>
+
+		<nav class="Nav__nav">
+			<ul class="Nav__nav--viñeta">
+				<li>
+					<a href="#agricultores">Asesoría para Agricultores</a>
+					<a href="#cooperativas">Asesoría para Cooperativas</a>
+					<a href="#corporativo">Asesoría para Corporativo</a>
+					<a href="#venta">Venta de materiales e insumos agrícolas</a>
+					<a href="#nosotros">Se parte de nosotros</a>
+					<a href="#plan">Planes</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="Servicios">
+    
+	    <div class="Servicios__Agricultores" id="agricultores">
+	    	<div class="Servicios__Agricultores--div">
+	    		<h2 class="Servicios__Agricultores--titulo">Asesoría para Agricultores</h2>
+	    		<p class="Servicios__Agricultores--descripcion" id="agricultores">
+	    		Agrupe los registros de las dimensiones de sus terrenos de cultivo y los datos de la ubicación de sus tierras como son altitud, latitud ylongitud.<br>
+	    		Asesoría sobre técnicas de cultivo y tratamiento de los suelos.<br>
+	    		Asesoría para evitar que se desarrollen plagas o enfermedades.
+	    		</p>
+	    		
+	    	</div>
+	    		<div>
+	    			<img class="Servicios__Agricultores--img" src="img/asesoria.png">
+	    		</div>
+	    </div>
+    
+	    <div class="Servicios__Cooperativas" id="cooperativas">
+	    	<div class="Servicios__Cooperativas--div">
+	    		<h2 class="Servicios__Cooperativas--titulo">Asesoría para Cooperativas</h2>
+	    		<p class="Servicios__Cooperativas--descripcion">
+	    		Registro central de todos los agricultores en la cooperativa, considerando los registros individuales de sus tierras<br>
+	    		Planificación y supervisión de la producción por agricultor, cultivo y sembradío<br>
+	    		Programación de seminarios de temas agrícolas<br>
+	    		Analice la producción a nivel global y de cada agricultor para identificar los factores claves de la productividad<br>
+	    		Brinde asesorías sobre temas contables, financieros y de comercialización de sus productos en los mercados nacional y extranjeros
+	    		</p>
+	    		
+	    		</div>
+	    	<div>
+	    		
+	    	</div>
+	    	<img class="Servicios__Cooperativas--img" src="img/cooperativas.png">
+	    </div>
+
+	    <div class="Servicios__Corporativo" id="corporativo">
+	    	<div class="Servicios__Corporativo--div">
+	    		<h2 class="Servicios__Corporativo--titulo">Asesoría para Corporativo</h2>
+	    		<p class="Servicios__Corporativo--descripcion">
+	    		Gestión de información en tiempo real de la evolución diaria de sus cultivos y actividades de los operarios de campo<br>
+	    		Controle sus ventas, gastos y el flujo de efectivo para no perjudicar sus finanzas<br>
+	    		Generación de informes automatizados para ISO 9001, Global GAP, HACCP y otras normas<br>
+	    		Integración con maquinaria, equipamiento y sensores para automatizar la recopilación de datos<br>
+	    		Atención a consultas directas con un asesor asignado
+	    		</p>
+	    	</div>
+	    	<div>
+	    		<img class="Servicios__Corporativo--img" src="img/corporativo.png">
+	    	</div>
+		
+	    </div>
+	    <div class="Servicios__Nosotros" id="nosotros">
+	    	<div class="Servicios__Nosotros--div">
+	    		<h2 class="Servicios__Nosotros--titulo">Se parte de nosotros</h2>
+	    		<p class="Servicios__Nosotros--descripcion">
+	    		Servicio que ofrece oportunidades de trabajo a los profesionales enagronomía para convertirse en asesores o distribuidores de productos agrónomos
+	    		</p>
+	    		
+	    	</div>
+	    	<div>
+	    		<img class="Servicios__Agricultores--img" src="img/nosotros.png">
+	    	</div>
+	    </div>
+
+	    <div class="Servicios__Venta" id="venta">
+	    	<div class="Servicios__Venta--div">
+	    		<h2 class="Servicios__Venta--titulo">Venta de materiales e insumos agrícolas</h2>
+	    		<p class="Servicios__Venta--descripcion">
+	    		Servicio especializado en la adquisición de productos nacionales e internacionales para la atención de los pedidos de venta de los agricultores. Como información complementaria se tiene la siguiente información relacionada al total de litros de productos 	agroindustriales más vendidos en lo que va del presente año
+	    		</p>
+	    	</div>
+
+	    	<div class="Servicios__Venta--grafica" id="piechart" style="width: 700px; height: 300px;"></div>
+		
+	    </div>
+
+	</section>
+
+	<section class="Planes" id="plan">
+		<div class="Planes__div">
+		<div class="Planes__PlanAgricultor">
+			<h2 class="Planes__PlanAgricultor--titulo">Plan Agricultor</h2>
+			<p class="Planes__PlanAgricultor--descripcion">
+				El plan Agricultor sólo permite registrar información que quede registrada en el dispositivo móvil del usuario
+			</p>
+			<input class="Planes__PlanAgricultor--boton" type="button" value="PAGAR">
+		</div>
+
+		<div class="Planes__PlanCooperativas">
+			<h2 class="Planes__PlanCooperativas--titulo">Plan Cooperativas</h2>
+			<p class="Planes__PlanCooperativas--descripcion">
+				El plan Cooperativas (a un costo de US$ 8.00 por mes) permite mantener información de hasta 20 agricultores asociados (quienes podrían tener o no cuentas de usuario) vinculadas
+			</p>
+			<input class="Planes__PlanCooperativas--boton" type="button" value="PAGAR">
+		</div>
+
+		<div class="Planes__PlanCorporativo">
+			<h2 class="Planes__PlanCorporativo--titulo">Plan Corportavo</h2>
+			<p class="Planes__PlanCorporativo--descripcion">
+				El plan Corporativo (con un costo de US$ 16.00 por mes) permite mantener una cantidad de hasta 100 terrenos vinculados. Adicionalmente el usuario puede realizar in-app purchases de farmers-packs de 10, 50 y 100 terrenos agrícolas adicionales.
+			</p>
+			<input class="Planes__PlanCorporativo--boton" type="button" value="PAGAR">
+		</div>
+		</div>
+	</section>
+
+	<footer>
+		Copyright-todos los derechos reservados
+	</footer>
+
+</body>
+</html>

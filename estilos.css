@@ -1,0 +1,186 @@
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+.Nav{
+	background: #1877f2;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.Nav__titulo{
+	display: inline-block;
+	position: relative;
+	left: 20px;
+}
+
+.Nav__nav{
+	display: inline-block;
+	position: relative;
+	left: 80px;
+	list-style: none;
+}
+.Nav__nav--viñeta{
+	list-style: none;
+}
+
+.Planes{
+	background: #ECECEC;
+}
+
+.Servicios p{
+	padding: 50px;
+}
+
+.Servicios h2{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 50px;
+	padding-left: 50px;
+
+}
+.Servicios__Agricultores{
+	padding-left: 200px;
+	display: block;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+}
+
+.Servicios__Agricultores--div{
+	width: 700px;
+}
+
+.Servicios__Agricultores--img{
+	position: relative;
+	left: 70px;
+	top:5px;
+	height: 350px;
+	width: 350px;
+}
+
+
+.Servicios__Cooperativas{
+	padding-left: 200px;
+	display: block;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+}
+.Servicios__Cooperativas--div{
+	width: 700px;
+}
+
+.Servicios__Cooperativas--img{
+	position: relative;
+	left: -270px;
+	top: 10px;
+	height: 350px;
+	width: 350px;
+
+}
+
+.Servicios__Corporativo{
+	padding-left: 200px;
+	display: block;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+}
+
+.Servicios__Corporativo--div{
+	width: 700px;
+}
+
+.Servicios__Venta{
+	display: block;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+}
+.Servicios__Nosotros--descripcion{
+	width: 700px;
+}
+.Servicios__Nosotros{
+	position: relative;
+	left: 200px;
+	display: block;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+    width: 1400px;
+}
+.Servicios__Venta--div{
+	position: relative;
+	width: 700px;
+	left: 200px;
+}
+/*<div class="Servicios__Venta--grafica" id="piechart" style="width: 600px; height: 200px;"></div>*/
+.Servicios__Venta--grafica{
+nosotros	position: relative;
+	left: 160px;
+}
+
+.Servicios__Corporativo--img{
+	position: relative;
+	left: 70px;
+	top:10px;
+	height: 350px;
+	width: 350px;
+}
+
+.Planes__div{
+	display: block;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+}
+.Servicios__Venta--descripcion{
+	width: 700px;
+	display: flex;
+}
+
+.Planes h2{
+	text-align: center;
+}
+
+.Planes__div h2{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.Planes__PlanCooperativas--boton{
+	position: relative;
+	left: 250px;
+	bottom: 30px;
+}
+
+.Planes__PlanAgricultor--boton{
+	position: relative;
+	left: 250px;
+	bottom: 10px;
+}
+
+.Planes__PlanCorporativo--boton{
+	position: relative;
+	left: 250px;
+	bottom: 40px;
+}
+.Servicios__Agricultores--img{
+	position: relative;
+	left: 70px;
+	top:10px;
+	height: 350px;
+	width: 350px;
+}
+.Planes__div p{
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
